@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asistente Mascotas"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="124dp"
+        android:src="@drawable/patita"
+        app:layout_constraintStart_toEndOf="@+id/titleTextView"
+        app:layout_constraintTop_toTopOf="@+id/titleTextView" />
+
+    <LinearLayout
+        android:id="@+id/petListContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView">
+
+        <TextView
+            android:id="@+id/petListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet List"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/petRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/editPetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        app:layout_constraintTop_toTopOf="@id/petListContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/reminderListContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/petListContainer"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/reminderListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder List"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reminderRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/editReminderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        app:layout_constraintTop_toTopOf="@id/reminderListContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp" />
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/backToLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
