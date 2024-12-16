@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AsistenteMascotas</string>
+
+    <string-array name="pet_types">
+        <item>Perro</item>
+        <item>Gato</item>
+        <item>Hamster</item>
+        <item>Conejo</item>
+        <item>Pececito</item>
+        <item>Agüila</item>
+        <item>Reptil</item>
+        <item>Hurón</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="pet_sex">
+        <item>Macho</item>
+        <item>Hembra</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "781302510531",
+    "project_id": "asistente-mascotas",
+    "storage_bucket": "asistente-mascotas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781302510531:android:98cdd7e113db7f16770376",
+        "android_client_info": {
+          "package_name": "com.alexcontre.asistentemascotas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOyDQv-EtfdavnkEn_FTnYP4Q1Uck9F8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

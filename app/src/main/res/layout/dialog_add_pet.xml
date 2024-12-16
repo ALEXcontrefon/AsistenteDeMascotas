@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/petNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pet Name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Field to input pet's name" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/petTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Field to select pet's type"
+            android:paddingEnd="8dp"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+
+        <Spinner
+            android:id="@+id/petTypeInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Field to select pet's type" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/petSexText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Field to select pet's sex"
+            android:paddingEnd="8dp"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+
+        <Spinner
+            android:id="@+id/petSexInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Field to select pet's sex" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/petBreedInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Breed"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Field to input pet's breed" />
+
+    <EditText
+        android:id="@+id/petAgeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Field to input pet's age" />
+</LinearLayout>

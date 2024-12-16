@@ -1,0 +1,61 @@
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/reminderTitleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter reminder title"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/reminderDescriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter reminder description"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/reminderDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter reminder date (dd/MM/yyyy)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/reminderTimeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter reminder time (HH:mm)"
+        android:inputType="text" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/petTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Field to select pet"
+            android:paddingEnd="8dp"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+
+        <Spinner
+            android:id="@+id/petSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"/>
+    </LinearLayout>
+</LinearLayout>
+
+
