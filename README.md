@@ -1,7 +1,5 @@
 ## BORRADOR DE PROYECTO - ASISTENTE DE CUIDADO DE MASCOTAS 
 
-
-
 ### Avances Realizados
 
 - **Creación de Activities**: Se han creado tres actividades principales:
@@ -51,11 +49,7 @@ En esta etapa final del desarrollo del proyecto, se han implementado las siguien
 - Se mejoró el diseño de las listas, otorgándoles un estilo más claro y ordenado que facilita la visualización de la información.
 - Se añadió la capacidad de modificar la información del recordatorio y de las actividades asociadas después de haber sido creadas, optimizando la experiencia del usuario.
 
-
-
-
-
-
+---
 
 ### 1. Descripción del Proyecto 
 
